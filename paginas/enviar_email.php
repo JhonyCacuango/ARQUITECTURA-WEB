@@ -1,11 +1,11 @@
 <?php
 if(isset($_POST['email'])) {
  
-    // Edita las líneas siguientes con tu dirección de correo y asunto
+    //  dirección de correo y asunto
  
-    $email_to = "tucorreo@tucorreo.com";
+    $email_to = "andres95cfc@gmail.com";
  
-    $email_subject = "Correo CLiente";   
+    $email_subject = "Correo de CLiente";   
  
     function died($error) {
  
@@ -36,7 +36,7 @@ if(isset($_POST['email'])) {
         died('Lo sentimos pero parece haber un problema con los datos enviados.');       
  
     }
- //Valor "name" nos sirve para crear las variables que recolectaran la información de cada campo
+ //variables que recolectaran la información de cada campo
  
     $first_name = $_POST['first_name']; // requerido
  
@@ -124,13 +124,12 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
  
 @mail($email_to, $email_subject, $email_message, $headers);  
- 
+
 ?>
- 
-<!-- Mensaje de Éxito-->
- 
-Muchas Gracias! Proximamente Estaremos en Contacto.
- 
+<script>
+  window.alert("Mensaje enviado");
+  alert("TMensaje enviado");
+</script>
 <?php 
 }
 ?>
