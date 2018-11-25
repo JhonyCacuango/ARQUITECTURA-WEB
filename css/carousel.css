@@ -22,6 +22,17 @@ body {
   z-index: 10;
 }
 
+/* personalizacion del jumbotron*/
+.jumbotron {
+  margin-bottom: 0px;
+  background-color: yellowgreen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  text-align: center;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
